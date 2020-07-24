@@ -7,7 +7,6 @@ consign({ cwd: 'src', verbose: false })
   .then('./config/routes.js')
   .into(app);
 
-
 app.get('/', (req, res) => res.status(200).send());
 
 module.exports = app;
